@@ -22,11 +22,6 @@
             text-decoration: underline;
         }
 
-
-
-
-
-
         .cards {
             width: 1000px;
             /* border: 1px solid red; */
@@ -44,6 +39,11 @@
             margin: 0 40px 0 10px;
         }
 
+
+        .cards .card.card:nth-child(2n-1) {
+            flex-direction: row-reverse;
+        }
+
         .txt {
             width: 650px;
         }
@@ -51,6 +51,11 @@
         .ulcontainer {
             display: flex;
             flex-wrap: wrap;
+            padding-left: 15px;
+        }
+
+        .txt ul li::marker {
+            color: blue;
         }
 
         .liitems {
@@ -58,7 +63,10 @@
 
         }
 
-        .txt h3, p, ul, a {
+        .txt h3,
+        p,
+        ul,
+        a {
             margin: 20px 0 20px 0;
         }
 
@@ -109,7 +117,7 @@
                     <li class="liitems">獨有網址 ＆ SSL 安全憑證</li>
                     <li class="liitems">開放 HTML／CSS 編輯</li>
                 </ul>
-                <a href="#">看看開店祕技</a>
+                <a href="#">看看開店祕技 → </a>
             </div>
         </div>
 
@@ -128,7 +136,7 @@
                     <li class="liitems">超商代碼／條碼繳費</li>
                     <li class="liitems">發票開立與串接</li>
                 </ul>
-                <a href="#">了解更多金物流</a>
+                <a href="#">了解更多金物流 → </a>
             </div>
         </div>
 
@@ -147,7 +155,7 @@
                     <li class="liitems">會員分級／點數／購物金</li>
                     <li class="liitems">FB／Google／LINE 廣告追蹤</li>
                 </ul>
-                <a href="#">看更多優惠模組</a>
+                <a href="#">看更多優惠模組 → </a>
             </div>
         </div>
 
@@ -166,7 +174,7 @@
                     <li class="liitems">自訂聊天機器人腳本</li>
                     <li class="liitems">訊息整合中心</li>
                 </ul>
-                <a href="#">看更多社群購物功能</a>
+                <a href="#">看更多社群購物功能 → </a>
             </div>
         </div>
 
@@ -185,7 +193,7 @@
                     <li class="liitems">門市快速集客工具</li>
                     <li class="liitems">Smart OMO 會員導購工具</li>
                 </ul>
-                <a href="#">了解更多全通路整合</a>
+                <a href="#">了解更多全通路整合 → </a>
             </div>
         </div>
 
