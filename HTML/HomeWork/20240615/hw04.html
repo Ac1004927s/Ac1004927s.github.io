@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 標楷體;
+        }
+
+        .container {
+            width: 960px;
+            height: 1200px;
+            margin: auto;
+        }
+
+        /* .items {
+            display: flex;
+            flex-wrap: wrap;
+        } */
+
+
+        .videolink iframe {
+            width: 640px;
+            height: 480px;
+            /* margin: auto; */
+            z-index: 1;
+        }
+
+        .greyblock {
+            width: 320px;
+            height: 240px;
+            background-color: lightgrey;
+            z-index: 0;
+        }
+
+        .numcard {
+            z-index: 2;
+        }
+
+        .numcard_title {
+            width: 320px;
+            background-color: red;
+            font-size: 60px;
+        }
+
+        .numcard_title div {
+            writing-mode: vertical-lr;
+        }
+
+
+        .numcard_title h1 {
+            text-align: center;
+            line-height: 40px;
+            font-size: 40px;
+            /* width: 67%; */
+        }
+
+        .numcard_article {
+            background-color: black;
+            width: 320px;
+            color: white;
+            padding: 20px 20px;
+        }
+
+        .numcard_article h2 {
+            font-size: 30px;
+        }
+
+        .numcard_article p {
+            font-size: 15px;
+        }
+
+        .numtitle div {
+            width: 33%;
+            font-size: 80px;
+            writing-mode: vertical-lr;
+        }
+
+
+
+        .description {
+            background-color: lightgray;
+            width: 640px;
+            z-index: 2;
+        }
+
+        .description h3 {
+            color: red;
+        }
+
+        .horizontal_bar {
+            width: 100px;
+            height: 5px;
+            background-color: red;
+            display: inline-block;
+        }
+
+        .description div h4 {
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="items">
+
+            <div class="greyblock"></div>
+
+            <div class="numcard">
+                <div class="numcard_title">
+                    <div>
+                        01
+                    </div>
+                    <h1>
+                        操控樂趣
+                    </h1>
+                </div>
+                <div class="numcard_article">
+                    <h2>
+                        人人滿意的駕駛體驗
+                    </h2>
+                    <p>
+                        透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心所欲馳騁的行駛快感。
+                    </p>
+                </div>
+            </div>
+
+            <div class="videolink">
+                <iframe src="https://www.youtube.com/watch?v=WH9kmoDw0fI&t=46s" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="description">
+                <h3>
+                    因為我們做了這些革新
+                    <div class="horizontal_bar"></div>
+                </h3>
+                <div>
+                    <h4>
+                        低重心設計
+                    </h4>
+                    <li>
+                        透過低重心設計，不僅呈現更低服的外觀，更能減少車身側傾，保持高速行駛穩定性。
+                    </li>
+                </div>
+                <div>
+                    <h4>
+                        車體剛性強化
+                    </h4>
+                    <li>
+                        車身結構採用超高強度鋼材，提高車輛穩定性，同時藉由雷射強化焊接技術，大幅增加焊點數量，提升車身抗扭剛性，強化駕馭穩定性及安全性。
+                    </li>
+                </div>
+                <div>
+                    <h4>
+                        四輪獨立懸吊
+                    </h4>
+                    <li>
+                        搭載全新四輪獨立懸吊設定，透過懸吊的高乘載強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清晰路感回饋，提升駕馭樂趣。
+                    </li>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
