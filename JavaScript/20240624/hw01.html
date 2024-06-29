@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+        }
+
+        .guess_button {
+            width: 80px;
+            height: 30px;
+            background-color: aqua;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        #input_box {
+            margin-left: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+        <label for="input_num" class="container">
+            <input type="text" placeholder="請輸入1~100間的整數:" id="input_box">
+            <div class="guess_button">猜</div>
+        </label>
+    </form>
+
+
+    <script>
+        const random_number = Math.floor(Math.random() * (101 - 1) + 1);
+        console.log(random_number);
+
+        const button_click = document.querySelector(".guess_button");
+        const input_tag = document.getElementById("input_box");
+
+        function guess() {
+            let input_number = "";
+            let input_value = input_box.value;
+            input_number = input_value;
+            
+            if (random_number ==  input_number) {
+                alert("對")
+            } else {
+                alert("錯")
+            }
+        }
+
+        button_click.addEventListener("click", guess);
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

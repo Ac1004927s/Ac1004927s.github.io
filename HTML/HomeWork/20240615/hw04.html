@@ -106,6 +106,63 @@
             padding: 5px 10px;
             display: inline-block;
         }
+
+
+        /* ======================================================================== */
+        ::before {
+            content: '';
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            background-color: #f00;
+            position: relative;
+            top: 2px;
+            border-radius: 50%;
+            scale: .3;
+        }
+
+        p {
+            padding-left: 1em;
+            text-indent: -1em;
+        }
+
+        /* ======================================================================== */
+        ::before {
+            content: '';
+            width: 1em;
+            height: 1em;
+            background-color: #f00;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            border-radius: 50%;
+            scale: .3;
+        }
+
+        p {
+            position: relative;
+            padding-left: 1em;
+        }
+
+        /* ======================================================================== */
+        ::before {
+            content: '●';
+            text-indent: 0em;
+            display: inline-block;
+            color: #f00;
+            scale: .3;
+        }
+
+        p {
+            padding-left: 1em;
+            text-indent: -1em;
+        }
+
+
+
+        .item:nth-child(n+2 of .item) {
+            margin-top: 1em;
+        }
     </style>
 </head>
 
